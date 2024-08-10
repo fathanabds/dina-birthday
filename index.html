@@ -94,7 +94,7 @@
           <div class="col-md-8 col-10 text-center">
             <h2>Pesta Hari Ulang Tahunku</h2>
             <p class="alamat">Address: Anomali Coffee Setiabudi <br />Setiabudi One Lt. 1</p>
-            <a href="https://maps.app.goo.gl/VzZhE1DjAWbrZzUMA" target="_blank" class="btn btn-light btn-sm my-3">Open Map</a>
+            <a href="https://maps.app.goo.gl/VzZhE1DjAWbrZzUMA" target="_blank" class="btn btn-light btn-sm my-3">Vroom Vroom!</a>
             <p class="desc">Food and beverages will definitely be charged.</p>
           </div>
         </div>
@@ -122,6 +122,21 @@
     </section>
     <!-- akhir info -->
 
+    <!-- story -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Kau Melukis Aku</span>
+            <h2>The Story of My Life</h2>
+            <p>“You only live once, but if you do it right, once is enough.”—Mae West</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir story -->
+
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -140,6 +155,20 @@
           seconds: { singular: 'second', plural: 'seconds' },
         },
         refresh: 1000, //default refresh every 1s
+      });
+    </script>
+
+    <!-- my script -->
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offCanvas = document.querySelector('.offcanvas');
+
+      offCanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offCanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden';
       });
     </script>
   </body>

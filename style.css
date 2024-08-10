@@ -159,6 +159,27 @@ body {
   font-weight: 300;
 }
 
+.story {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.story span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story h2 {
+  color: var(--pink);
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 /* Media Query */
 /* laptop */
 @media (max-width: 992px) {
@@ -168,6 +189,10 @@ body {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+
+  .home .dina h3 {
+    font-size: 4.5rem;
   }
 }
 
@@ -187,8 +212,12 @@ body {
     text-align: center;
   }
 
-  .home .dina img {
-    width: 57%;
+  .home .dina h3 {
+    font-size: 5rem;
+  }
+
+  .sticky-top {
+    overflow: hidden;
   }
 }
 
@@ -203,7 +232,7 @@ body {
     margin: 2px;
   }
 
-  .home .dina img {
-    width: 70%;
+  .home .dina h3 {
+    font-size: 5rem;
   }
 }
