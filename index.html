@@ -24,10 +24,57 @@
       <main>
         <h4>Holy moley!</h4>
         <h1>Dina Fadillah Salma</h1>
-        <p>Akan berulang tahun dalam:</p>
+        <p>will have a birthday in:</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#undangan" class="btn btn-lg mt-4">Send Some Wishes</a>
       </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top my-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dina's Birthday</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dina's Birthday</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#story">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>DOB</h2>
+            <h3>August 13, 1998, Wonosobo, Central Java.</h3>
+            <p>On that miraculous waning gibbous dawn, a little baby was born. <br />“Every day is a gift. But some days are packaged better.” —Sanhita Baruah</p>
+          </div>
+          <div class="row dina justify-content-center">
+            <div class="col-lg-6 text-center">
+              <div class="row justify-content-center">
+                <h3 class="mt-5">Dina Fadillah Salma</h3>
+                <div class="col-4">
+                  <img class="img-responsive rounded-circle" src="img/dina.png" alt="Dina Fadillah Salma" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- bootstrap -->
@@ -42,10 +89,10 @@
         day: 13, // required
         words: {
           //words displayed into the countdown
-          days: { singular: 'hari', plural: 'hari' },
-          hours: { singular: 'jam', plural: 'jam' },
-          minutes: { singular: 'menit', plural: 'menit' },
-          seconds: { singular: 'detik', plural: 'detik' },
+          days: { singular: 'day', plural: 'days' },
+          hours: { singular: 'hour', plural: 'hours' },
+          minutes: { singular: 'minute', plural: 'minutes' },
+          seconds: { singular: 'second', plural: 'seconds' },
         },
         refresh: 1000, //default refresh every 1s
       });
