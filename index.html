@@ -29,7 +29,7 @@
       <main>
         <h4>Holy Mackerel!</h4>
         <h1>Dina Fadillah Salma</h1>
-        <p>will have a birthday in:</p>
+        <p></p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4">Send Some Wishes</a>
       </main>
@@ -51,11 +51,11 @@
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#info">Info</a>
-              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#pesta">Pesta</a>
+              <a class="nav-link" href="#notes">Notes</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#story">Gifts</a>
+              <a class="nav-link" href="#gift">Gift</a>
             </div>
           </div>
         </div>
@@ -83,12 +83,16 @@
             </div>
           </div>
         </div>
+        <div class="dina-thumb row justify-content-center">
+          <div class="col-5"><img src="img/thumbnail/thumb1.jpg" class="img-thumbnail" alt="" /></div>
+          <div class="col-5"><img src="img/thumbnail/thumb2.jpg" class="img-thumbnail" alt="" /></div>
+        </div>
       </div>
     </section>
     <!-- akhir home -->
 
-    <!-- info -->
-    <section id="info" class="info">
+    <!-- pesta -->
+    <section id="pesta" class="pesta">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
@@ -110,7 +114,7 @@
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Saturday, August 30, 2024</span>
+                    <span>Saturday, August 31, 2024</span>
                   </div>
                 </div>
               </div>
@@ -120,22 +124,58 @@
         </div>
       </div>
     </section>
-    <!-- akhir info -->
+    <!-- akhir pesta -->
 
-    <!-- story -->
-    <section id="story" class="story">
+    <!-- notes -->
+    <section id="notes" class="notes">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Kau Melukis Aku</span>
-            <h2>The Story of My Life</h2>
+            <span>Semoga Ada Bara yang Tersisa</span>
+            <h2>Figures Notes</h2>
             <p>“You only live once, but if you do it right, once is enough.”—Mae West</p>
             <p></p>
           </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-img" style="background-image: url(img/tl/taylor.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading"><h3>Taylor Swift</h3></div>
+                  <div class="timeline-body">
+                    <p>🎉 Hey Dina! 🎉 May your day be filled with <span style="display: inline" class="fw-semibold">magic, laughter, and all your wildest dreams</span> coming true. Keep shining and stay fearless! 💖</p>
+                  </div>
+                </div>
+              </li>
+              <li class="inverted">
+                <div class="timeline-img" style="background-image: url(img/tl/olivia.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading"><h3>Olivia Rodrigo</h3></div>
+                  <div class="timeline-body">
+                    <p>
+                      It’s Olivia here! I hope your day is filled with <span style="display: inline" class="fw-semibold">all the feels, epic moments, and a little bit of chaos</span> (the good kind, of course). Keep being your awesome self!
+                      🌟
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-img" style="background-image: url(img/tl/bp.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading"><h3>BLACKPINK</h3></div>
+                  <div class="timeline-body">
+                    <p>🎂 안녕, 디나! 🎂 생일 축하해요! 오늘 하루가 <span style="display: inline" class="fw-semibold">화려하고, 즐겁고, 당신이 사랑하는 모든 것들로 가득하길</span> 바래요. 계속 멋지고 당당하게 지내세요! 💖</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- akhir story -->
+    <!-- akhir notes -->
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -156,6 +196,15 @@
         },
         refresh: 1000, //default refresh every 1s
       });
+    </script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.hero main p', { duration: 2, delay: 1.5, text: 'will have a birthday in:' });
+      gsap.from('.hero main h1', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
     </script>
 
     <!-- my script -->
